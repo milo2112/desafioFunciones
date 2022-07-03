@@ -12,16 +12,19 @@ function paint(fColor, fDiv) {
 textentry.addEventListener("keydown", function (event) {
     if (event.key == 'a' || event.key == 'A') {
         entryColor = "black";
+        document.getElementById("message").style.color = entryColor;
         document.getElementById("message").innerHTML = "Presionaste la letra '" + event.key + "' y pintará Negro cualquiera de los cuadros al hacer click sobre ellos";
         document.getElementById("textentry").value = "";
         flag = 0;
     } else if (event.key == 's' || event.key == 'S') {
         entryColor = "blue";
+        document.getElementById("message").style.color = entryColor;
         document.getElementById("message").innerHTML = "Presionaste la letra '" + event.key + "' y pintará Azul cualquiera de los cuadros al hacer click sobre ellos";
         document.getElementById("textentry").value = "";
         flag = 0;
     } else if (event.key == "d" || event.key == 'D') {
         entryColor = "pink";
+        document.getElementById("message").style.color = entryColor;
         document.getElementById("message").innerHTML = "Presionaste la letra '" + event.key + "' y pintará Rosado cualquiera de los cuadros al hacer click sobre ellos";
         document.getElementById("textentry").value = "";
         flag = 0;
@@ -29,6 +32,7 @@ textentry.addEventListener("keydown", function (event) {
     else {
         document.getElementById("message").innerHTML = "Lo siento, debes ingresar una de las letras indicadas y no podrás cambiar color...";
         document.getElementById("textentry").value = "";
+        document.getElementById("message").style.color = "Red";
         flag = 1;
     }
 });
