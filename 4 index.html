@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimiento 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            padding-top: 5%;
+            align-items: center;
+        }
+
+        .container * {
+            height: 200px;
+            width: 200px;
+            border: 1px black solid;
+            padding: 10%;
+            justify-self: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 100%;
+        }
+        
+        .dataentry {
+            padding-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="div1" style="background-color: yellowgreen"></div>
+        <div id="div2" style="background-color: goldenrod"></div>
+        <div id="div3" style="background-color: purple"></div>
+        <div id="div4" style="background-color: orangered"></div>
+    </div>
+    <div class="dataentry">
+        <h3 style="font-family: 'Preahvihear', sans-serif;">Presione "a", "s" o "d" en la entrada de abajo para cambiar color de un div al hacer click sobre él.</h3>
+        <input type="text" id="textentry">
+        <strong><h1 id="message" style="font-family: 'Preahvihear', sans-serif;"></h1></strong>
+    </div>
+
+    <script src="assets/js/4 script.js"></script>    
+</body>
+</html>
