@@ -1,9 +1,3 @@
-//captura elemntos DIV del DOM
-let div1 = document.getElementById("div1");
-let div2 = document.getElementById("div2");
-let div3 = document.getElementById("div3");
-let div4 = document.getElementById("div4");
-
 // variables globales: 
 let entryColor; // entryColor guardará el color dependiendo de la letra 
 let flag = 0;   // flag será booleano para controlar los click cuando la letra != "d", "s" o "a" 
